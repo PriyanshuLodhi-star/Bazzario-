@@ -1,0 +1,128 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazario - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Bazario</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="vendor.html">Become a Seller</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    
+
+    <section class="main-banner">
+        <div class="banner-content">
+            <h2>Freshness From Your Local Market</h2>
+            <p>Discover local products, support small businesses and shop with ease.</p>
+            <a href="products.html" class="button">Shop Now</a>
+        </div>
+    </section>
+
+    <section class="home-categories">
+        <h2>Explore Our Categories</h2>
+        <p>Everything you need, available from local shops.</p>
+
+        <div class="category-container">
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400" alt="Vegetables">
+                <h3>Groceries</h3>
+                <p>Fresh fruits and vegetables</p>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400" alt="Bakery">
+                <h3>Bakery</h3>
+                <p>Bread, cakes and snacks</p>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?w=400" alt="Handmade pottery">
+                <h3>Handmade</h3>
+                <p>Beautiful handmade items</p>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400" alt="Home decoration">
+                <h3>Home Products</h3>
+                <p>Decorations and essentials</p>
+            </div>
+
+            <div class="category-card">
+                <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=400" alt="Clothing">
+                <h3>Textiles & Clothing</h3>
+                <p>Clothes, fabrics and curtains</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="popular-products">
+        <h2>Popular Products</h2>
+        <p>Discover some of our local favourites.</p>
+
+        <div class="shop-products">
+
+            <div class="shop-card">
+                <img src="https://images.unsplash.com/photo-1540420773420-3366772f4999?w=400" alt="Fresh vegetables">
+                <h3>Fresh Vegetables</h3>
+                <p>Groceries</p>
+                <h3>₹80</h3>
+                <a href="products.html" class="button">View Product</a>
+            </div>
+
+            <div class="shop-card">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400" alt="Chocolate cake">
+                <h3>Chocolate Cake</h3>
+                <p>Bakery</p>
+                <h3>₹450</h3>
+                <a href="products.html" class="button">View Product</a>
+            </div>
+
+            <div class="shop-card">
+                <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=400" alt="Home decoration">
+                <h3>Home Decoration</h3>
+                <p>Home Products</p>
+                <h3>₹550</h3>
+                <a href="products.html" class="button">View Product</a>
+            </div>
+
+        </div>
+        <h3>Total Website Visits: <span id="visits"></span></h3>
+    
+        <script>
+let count = localStorage.getItem("visitCount");
+
+if (count == null) {
+    count = 0;
+}
+
+document.getElementById("visits").innerHTML = count;
+</script>
+    </section>
+
+    <section class="seller-banner">
+        <h2>Are You a Local Seller?</h2>
+        <p>Bring your products online and reach more customers with LocalKart.</p>
+        <a href="vendor.html" class="button">Join as a Seller</a>
+    </section>
+
+    <footer>
+        <p>© 2026 Bazario | Supporting Local Businesses</p>
+    </footer>
+
+</body>
+</html>

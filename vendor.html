@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazario - Vendor Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="main-header">
+        <h1>Bazario</h1>
+        <p>Vendor Dashboard</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="vendor.html">Become a Seller</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <section>
+        <h2>Welcome, Local Seller!</h2>
+        <p>Add your products through this dashboard.</p>
+    </section>
+
+    <section class="vendor-form">
+
+        <h2>Add New Product</h2>
+
+        <form onsubmit="addVendorProduct(); return false;">
+
+            <label>Product Name:</label>
+            <input type="text" id="productName" placeholder="Enter product name" required>
+
+            <label>Product Price:</label>
+            <input type="number" id="productPrice" placeholder="Enter price" required>
+
+            <label>Product Category:</label>
+
+            <select id="productCategory">
+                <option>Groceries</option>
+                <option>Bakery</option>
+                <option>Handmade</option>
+                <option>Home Products</option>
+                <option>Textiles & Clothing</option>
+            </select>
+
+            <button type="submit">Add Product</button>
+
+        </form>
+
+    </section>
+
+    <section>
+        <h2>My Products</h2>
+        <div id="vendorProducts"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Bazario | Supporting Local Businesses</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

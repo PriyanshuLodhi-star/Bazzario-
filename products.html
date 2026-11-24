@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bazario - Products</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1>Bazario</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">All Products</a>
+        <a href="cart.html">Shopping Cart</a>
+        <a href="vendor.html">Become a Seller</a>
+        <a href="admin.html">Admin</a>
+    </nav>
+
+    <section class="shop-banner">
+        <h2>Explore Our Products</h2>
+        <p>Find quality products from your favourite local shops.</p>
+    </section>
+
+    <section>
+        <h2>All Products</h2>
+
+        <input type="text" id="searchInput"
+        placeholder="Search products..."
+        onchange="displayProducts()"
+        onfocus="this.style.backgroundColor='lightyellow'"
+        onblur="this.style.backgroundColor='white'">
+
+        <select id="categoryFilter" onchange="displayProducts()">
+            <option value="All">All Categories</option>
+            <option value="Groceries">Groceries</option>
+            <option value="Bakery">Bakery</option>
+            <option value="Handmade">Handmade</option>
+            <option value="Home Products">Home Products</option>
+            <option value="Textiles & Clothing">Textiles & Clothing</option>
+        </select>
+
+        <div class="shop-products" id="productList"></div>
+
+        <p>
+            <a href="cart.html" class="button">Go to Shopping Cart</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2026 Bazario | Supporting Local Businesses</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
